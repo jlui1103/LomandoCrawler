@@ -42,7 +42,6 @@
   display: flex;
   justify-items: center;
   margin-bottom: auto;
-  
   padding: 20px;
 
 }
@@ -56,7 +55,10 @@
   border: 1px solid black;
 
 }
+.title{
+  flex:1;
 
+}
 .node-button {
   border-radius: 50%;
   border: 0px;

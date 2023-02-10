@@ -1,14 +1,14 @@
 import PropTypes from 'prop-types'
-const sidePanel = () => {
+const sidePanel = ({showNode}) => {
     return(
-    <h1 className='side'>
-        hi
-    </h1>
+    <side className='side'>
+        Welcome
+    </side>
 
     )
 }
 sidePanel.defaultProps = {
-    title: 'Side Panel',
+    title: ' Welcome'
 }
 sidePanel.propTypes = {
     title: PropTypes.string.isRequired,

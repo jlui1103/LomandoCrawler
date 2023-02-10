@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 const mainPanel = () => {
     return(
     <mainPanel className="main" >
-      hi
+      
     </mainPanel>
     )
 }
