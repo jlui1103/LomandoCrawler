@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  height: 100%;
 }
 
 .App-logo {
@@ -38,8 +39,22 @@
 }
 
 .main-layout {
-  display: grid;
+  display: flex;
   justify-items: center;
+  margin-bottom: auto;
+  
+  padding: 20px;
+
+}
+.panel:first-child{
+  flex: 2;
+  border: 1px solid black;
+  
+}
+.panel{
+  flex: 1;
+  border: 1px solid black;
+
 }
 
 .node-button {
