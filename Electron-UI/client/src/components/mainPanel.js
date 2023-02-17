@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types'
 import Button from './Button'
-const MainPanel = (showNode) => {
+const MainPanel = (showNode, onClick) => {
     return(
     <mainPanel className="main" >
-      <Button color = {'blue'} onClick = {showNode}/>
+      <Button color = {showNode ? 'blue' :'red'} onClick = {onClick} text = {showNode ? "True" : "False"}/>
       
     </mainPanel>
     )

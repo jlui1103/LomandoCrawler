@@ -11,12 +11,13 @@ function App() {
     <div className="App">
       <m1 className = "main-layout">
         <m2 className = "panel main">
-          <MainPanel showNode = {showNode} />
-          
+          <MainPanel onClick = {() => setShowNode(!showNode)} showNode = {showNode}  />
+
         </m2>
         <m3 className = "panel side">
-          <SidePanel nodeClicked={showNode} node = {true} 
-          title ={node.id}/>
+          test
+          {/* <SidePanel nodeClicked={showNode} node = {true} 
+          title ={node.id}/> */}
         </m3>
       </m1> 
     </div>

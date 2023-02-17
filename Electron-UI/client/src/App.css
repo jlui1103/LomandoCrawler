@@ -43,7 +43,7 @@
   justify-items: center;
   margin-bottom: auto;
   padding: 20px;
-
+  height: 100vh;
 }
 .panel:first-child{
   flex: 2;
