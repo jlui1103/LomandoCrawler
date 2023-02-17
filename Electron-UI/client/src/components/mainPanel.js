@@ -1,13 +1,15 @@
 import PropTypes from 'prop-types'
-const mainPanel = () => {
+import Button from './Button'
+const MainPanel = (showNode) => {
     return(
     <mainPanel className="main" >
+      <Button color = {'blue'} onClick = {showNode}/>
       
     </mainPanel>
     )
 }
 
-mainPanel.propTypes = {
+MainPanel.propTypes = {
     title: PropTypes.string.isRequired,
 }
-export default mainPanel;
+export default MainPanel;
