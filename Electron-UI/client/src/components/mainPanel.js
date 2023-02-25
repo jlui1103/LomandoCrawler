@@ -2,14 +2,15 @@ import PropTypes from 'prop-types'
 import Button from './Button'
 const MainPanel = (showNode, onClick) => {
     return(
-    <mainPanel className="main" >
-      <Button color = {showNode ? 'blue' :'red'} onClick = {onClick} text = {showNode ? "True" : "False"}/>
+    <main className="main" >
+      <Button color = {showNode ? 'blue' :'red'}  text = {showNode ? "True" : "False"} onClick = {onClick}/>
       
-    </mainPanel>
+    </main>
     )
 }
 
 MainPanel.propTypes = {
     title: PropTypes.string.isRequired,
+  
 }
 export default MainPanel;
