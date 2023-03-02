@@ -5,14 +5,16 @@ import { useState } from 'react'
 import Button from './components/Button';
 //import PrimaryLayout from './components/PrimaryLayout'
 function App() {
-  const [showNode,setShowNode] = useState(false)
-
+  const [showNode,setShowNode] = useState(true)
+  const toggleNode = () => 
+  {
+    setShowNode(!showNode)}
   return (
     <div className="App">
       <m1 className = "main-layout">
         <m2 className = "panel main">
-          <MainPanel onClick = {() => setShowNode(!showNode)} showNode = {showNode}  />
-
+          <MainPanel onShow = {toggleNode}
+          show = {showNode}  />
         </m2>
         <m3 className = "panel side">
           test
