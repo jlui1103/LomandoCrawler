@@ -12,14 +12,15 @@ function App() {
   return (
     <div className="App">
       <m1 className = "main-layout">
-        <m2 className = "panel main">
+        <m2 className = "panel main" id = '0'>
           <MainPanel onShow = {toggleNode}
-          show = {showNode}  />
+          show = {showNode}
+          id = '0'
+            />
         </m2>
         <m3 className = "panel side">
-          test
-          {/* <SidePanel nodeClicked={showNode} node = {true} 
-          title ={node.id}/> */}
+         <SidePanel node = {MainPanel.node}
+         nodeName = {MainPanel.id}/>
         </m3>
       </m1> 
     </div>

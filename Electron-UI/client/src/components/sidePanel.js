@@ -1,19 +1,20 @@
 import PropTypes from 'prop-types'
 import Button from  './Button'
-const SidePanel = ({nodeClicked,node,title}) => {
+const SidePanel = ({node,nodeName}) => {
+
+      const nodeSelect = () => {
+        if(node != null){
+          return true
+        }
+      }
     return(
-    <h1 className='Side'{...nodeClicked ? title = node.id: title = 'Welcome'} >
-       {title}
-    </h1>
-
+    <side nodeNamed = {nodeName? nodeName = nodeName : nodeName= 'welcome'}
+    className='Side'>
+    {nodeName}
+    </side>
+   
     )
-}
-SidePanel.defaultProps = {
-    title: ' Welcome'
+    }
 
-    
-}
-SidePanel.propTypes = {
-    title: PropTypes.string.isRequired,
-}
+
 export default SidePanel;

@@ -1,7 +1,12 @@
 import PropTypes from 'prop-types'
-const Button = ({onClick,text}) => {
+const Button = ({onClick,text,title,id}) => {
+    function getTitle() {
+        return title
+    }
     return(
     <button  
+    id= {id}
+    title = {title}
     onClick={onClick}
     style = {{backgroundColor: 'blue',  
         borderRadius: 50,
@@ -13,6 +18,7 @@ const Button = ({onClick,text}) => {
     className='btn'>
 
     {text}
+   
     </button>
     )
 }
