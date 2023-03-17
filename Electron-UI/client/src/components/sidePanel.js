@@ -1,20 +1,14 @@
 import PropTypes from 'prop-types'
 import Button from  './Button'
-const SidePanel = ({node,nodeName}) => {
-
-      const nodeSelect = () => {
-        if(node != null){
-          return true
-        }
-      }
+const SidePanel = ({node,title,onShow}) => {
     return(
-    <side nodeNamed = {nodeName? nodeName = nodeName : nodeName= 'welcome'}
-    className='Side'>
-    {nodeName}
+       
+    <side title = {node.id =="" ?  title= 'welcome': title = node.id }
+    onShow = {onShow}
+    className='Side' id = '2' >
+    {title}
     </side>
    
     )
     }
-
-
 export default SidePanel;

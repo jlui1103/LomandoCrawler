@@ -5,10 +5,23 @@ import { useState } from 'react'
 import Button from './components/Button';
 //import PrimaryLayout from './components/PrimaryLayout'
 function App() {
-  const [showNode,setShowNode] = useState(true)
+  const [showNode,setShowNode] = useState(false)
+  const [node, setNode] = useState({
+    node: "",
+    id: ""
+  }
+  )
+  
+  // const changeNode = (node) =>{
+  //   if (setNode != null){
+  //      setNode(node)
+  //    }
+  //  }
   const toggleNode = () => 
   {
-    setShowNode(!showNode)}
+    setShowNode(!showNode)
+  }
+
   return (
     <div className="App">
       <m1 className = "main-layout">
@@ -16,15 +29,17 @@ function App() {
           <MainPanel onShow = {toggleNode}
           show = {showNode}
           id = '0'
+          setNode = {setNode}
             />
         </m2>
         <m3 className = "panel side">
-         <SidePanel node = {MainPanel.node}
-         nodeName = {MainPanel.id}/>
+         <SidePanel 
+         onShow = {toggleNode}
+         node = {node}
+         />
         </m3>
       </m1> 
     </div>
   ); 
 };
-
 export default App;

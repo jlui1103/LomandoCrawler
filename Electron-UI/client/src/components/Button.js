@@ -1,8 +1,5 @@
 import PropTypes from 'prop-types'
 const Button = ({onClick,text,title,id}) => {
-    function getTitle() {
-        return title
-    }
     return(
     <button  
     id= {id}
