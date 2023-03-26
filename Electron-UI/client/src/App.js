@@ -7,8 +7,8 @@ import Button from './components/Button';
 function App() {
   const [showNode,setShowNode] = useState(false)
   const [node, setNode] = useState({
-    node: "",
-    id: ""
+    node: "Main",
+    id: "0"
   }
   )
   

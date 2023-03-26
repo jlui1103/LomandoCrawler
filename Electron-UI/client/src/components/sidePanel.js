@@ -3,9 +3,9 @@ import Button from  './Button'
 const SidePanel = ({node,title,onShow}) => {
     return(
        
-    <side title = {node.id =="" ?  title= 'welcome': title = node.id }
+    <side title = {node.id =="0" ?  title= 'welcome': title = node.id }
     onShow = {onShow}
-    className='Side' id = '2' >
+    className='Side'>
     {title}
     </side>
    
