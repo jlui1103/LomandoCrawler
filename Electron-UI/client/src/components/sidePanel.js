@@ -7,6 +7,9 @@ const SidePanel = ({node,title,onShow}) => {
     onShow = {onShow}
     className='Side'>
     {title}
+        <p >
+            {title == 'welcome' ? "Instruction\n Please Click on a Nodes see the options the node has" : title = "Options"}
+        </p>
     </side>
    
     )
