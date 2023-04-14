@@ -13,7 +13,7 @@ const Button = ({onClick,text,title,id}) => {
         cursor: 'pointer' }} 
     
     className='btn'>
-
+    {title}
     {text}
    
     </button>

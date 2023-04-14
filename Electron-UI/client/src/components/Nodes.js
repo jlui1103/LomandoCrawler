@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Node from './Node'
 const Tree = ({data = []}) =>{
     return(
         <div className='d-tree'>
