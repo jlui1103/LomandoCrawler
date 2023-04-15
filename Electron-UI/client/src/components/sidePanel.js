@@ -1,14 +1,16 @@
 import PropTypes from 'prop-types'
 import Button from  './Button'
-const SidePanel = ({node,title,onShow}) => {
+const SidePanel = ({node,title,onShow,onClick}) => {
     return(
        
     <side title = {node.id =="0" ?  title= 'welcome': title = node.id }
     onShow = {onShow}
-    className='Side'>
+    onClick = {onClick}
+    className='side'>
+    
     {title}
         <p >
-            {title == 'welcome' ? "Instruction\nPlease Click on a Node see the options the node has" : title = "Options"}
+            {title == 'welcome' ? <span>Instruction<br/>Please Click on a Node see the options the node has</span> : title = "Options"}
         </p>
     </side>
    
