@@ -4,14 +4,15 @@ import SidePanel from './components/sidePanel';
 import { useState } from 'react'
 import Button from './components/Button';
 //import PrimaryLayout from './components/PrimaryLayout'
-
 function App() {
   const [showNode,setShowNode] = useState(false)
   const [node, setNode] = useState({
-    node: "Main",
-    id: "0"
+    title: "Main",
+    id: "0",
+    children: []
   }
   )
+ 
   const tempData = [
     {
       id: "1",
@@ -37,16 +38,11 @@ function App() {
       }
     ]
   }]
-  // const changeNode = (node) =>{
-  //   if (setNode != null){
-  //      setNode(node)
-  //    }
-  //  }
+
   const toggleNode = () => 
   {
     setShowNode(!showNode)
   }
- 
 
   return (
     <div className="App">

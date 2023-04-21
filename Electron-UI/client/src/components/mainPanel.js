@@ -2,13 +2,14 @@ import PropTypes from 'prop-types'
 import Button from './Button'
 import React, {useState} from 'react';
 import Nodes from './Nodes'
-const MainPanel = ({show, onShow,nodeName,setNode,data}) => {
+import Node from './Node';
+const MainPanel = ({setNode,data}) => {
   const onClick = (e)=> {
     if (e.target.className ==='btn'){
-        console.log('c')
+        //console.log('c')
         setNode({node: e.target, id: e.target.id})
       } else{
-        console.log('a')
+        //console.log('a')
         setNode({node: "Main", id: 0})
       }
     }  
